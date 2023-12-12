@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Noto+Sans+Mono&display=swap');
+
+html {
+  --type-primary-bg-color: #22272e;
+  --type-second-bg-color: #272e35;
+  --type-primary-font-color: #6d7887;
+}
+
+html,
+body {
+  background: var(--type-primary-bg-color);
+  overflow: hidden;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+input {
+  outline: none;
+  color: transparent;
+  border: none;
+  background: none;
+  resize: none;
+  user-select: none;
+  pointer-events: none;
+}
+
+.typeBlock {
+  font-family: 'Noto Sans Mono', sans-serif;
+  user-select: none;
+}
+
+.mistakes-enter {
+  opacity: 0;
+}
+.mistakes-enter-active {
+  opacity: 1;
+  transition: opacity .3s;
+}
+.mistakes-exit {
+  opacity: 1;
+  transition: opacity .3s;
+}
+.mistakes-exit-active {
+  opacity: 0;
+
+}
