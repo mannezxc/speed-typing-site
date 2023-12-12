@@ -18,7 +18,14 @@ body {
   font-weight: 400;
 }
 
-input {
+.setTextInput {
+  outline: none;
+  border: none;
+  resize: none;
+  background: none;
+}
+
+.typeInput {
   outline: none;
   color: transparent;
   border: none;
