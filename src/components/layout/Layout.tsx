@@ -1,16 +1,10 @@
-import { FC } from 'react'
 import { Outlet } from 'react-router-dom'
+import { FC } from 'react'
 
 const Layout: FC = () => {
   return <>
-    <header>
-
-    </header>
     <main className='h-screen'>
-        <aside>
-
-        </aside>
-        <Outlet/>
+      <Outlet />
     </main>
   </>
 }
