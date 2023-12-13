@@ -43,7 +43,7 @@ const TypePage: FC = () => {
     }, [currentText, setShowModal, inputNewText])
     
     return <>
-        <section className='flex justify-center items-center w-full h-full text-white'>
+        <section className='flex justify-center items-center w-full h-full text-white px-4'>
             <ModalNewText ref={newTextRef} showModal={showModal} changeText={changeText} setShowModal={setShowModal} setInputNewText={setInputNewText} inputNewText={inputNewText} />
             <div className='flex items-start flex-col'>
                 <div className="flex items-center flex-col relative">

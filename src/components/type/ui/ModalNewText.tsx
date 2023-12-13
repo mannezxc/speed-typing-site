@@ -28,7 +28,6 @@ const ModalNewText = forwardRef<HTMLTextAreaElement, ModalNewTextType>(({ change
             </div>
         </div>
     </div>
-
 })
 
 export default ModalNewText

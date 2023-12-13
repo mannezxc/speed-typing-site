@@ -12,12 +12,12 @@ interface ITypingBlock {
 }
 
 const TypingBlock = forwardRef<HTMLInputElement, ITypingBlock>(({ focusHandler, inputFocused, currentText, styleNextLetter, currentTyping, changeHandler}, typingRef) => {
-    return <div className="w-[1140px] h-full bg-[--type-second-bg-color] rounded-[12px] p-16 mb-4"
+    return <div className="max-w-[1140px] w-full h-full bg-[--type-second-bg-color] rounded-[12px] p-16 mb-4"
         onClick={focusHandler}>
         <div className="relative h-full flex justify-center items-center">
             {!!!inputFocused && <p className=' absolute text-[18px] typeBlock'>Click to focus</p>}
             <input ref={typingRef} className="absolute cursor-default body select-none rounded-[12px] typeInput" onChange={changeHandler} value={currentTyping}></input>
-            <div className={`${!!!inputFocused && 'blur-sm'} h-full pointer-events-none text-[20px] typeBlock relative`}>
+            <div className={`${!!!inputFocused && 'blur-sm'} h-full pointer-events-none  typeBlock relative lg:text-[20px] max-[768px]:text-[14px] max-[1024px]:text-[16px]`}>
                 {currentText.split('').map((e, i) => <span key={i} className={`
       h-full 
       text-[--type-primary-font-color] font-semibold 
